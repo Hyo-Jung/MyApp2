@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카우프 프로그램"
+        android:textSize="30dp"
+        android:id="@+id/tv_descPgm"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성명을 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홍길동"
+        android:textSize="20dp"
+        android:id="@+id/et_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="몸무게를 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descWeight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:textSize="20dp"
+        android:id="@+id/et_weight"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="키를 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descHeight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="180"
+        android:textSize="20dp"
+        android:id="@+id/et_height"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textColor="#ff0000"
+        android:textSize="20dp"
+        android:id="@+id/bt_confirm" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과가 하단에 표시됩니다."
+        android:textSize="20dp"
+        android:id="@+id/tv_descOutput"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20dp"
+        android:id="@+id/tv_output"/>
+</LinearLayout>
