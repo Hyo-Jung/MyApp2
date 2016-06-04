@@ -4,59 +4,72 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카우프 프로그램"
+        android:textSize="30dp"
+        android:id="@+id/tv_descPgm"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성명을 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홍길동"
+        android:textSize="20dp"
+        android:id="@+id/et_name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="몸무게를 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descWeight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:textSize="20dp"
+        android:id="@+id/et_weight"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="키를 입력하세요"
+        android:textSize="20dp"
+        android:id="@+id/tv_descHeight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="180"
+        android:textSize="20dp"
+        android:id="@+id/et_height"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="카우프계산"
+        android:text="확인"
         android:textColor="#ff0000"
         android:textSize="20dp"
-        android:id="@+id/btKaup" />
+        android:id="@+id/bt_confirm" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과가 하단에 표시됩니다."
+        android:textSize="20dp"
+        android:id="@+id/tv_descOutput"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20dp"
+        android:id="@+id/tv_output"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="계산기"
+        android:text="Main"
         android:textSize="20dp"
-        android:id="@+id/btCalc" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="전화걸기"
-        android:textSize="20dp"
-        android:id="@+id/btDial" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그인"
-        android:textSize="20dp"
-        android:id="@+id/btLogin"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="홈페이지 열기"
-        android:textSize="20dp"
-        android:id="@+id/btnWeb" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="구글 맵 열기"
-        android:textSize="20dp"
-        android:id="@+id/btnGoogle" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="구글 검색하기"
-        android:textSize="20dp"
-        android:id="@+id/btnSearch" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="문자 보내기"
-        android:textSize="20dp"
-        android:id="@+id/btmSms" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="사진 보기"
-        android:textSize="20dp"
-        android:id="@+id/btnPhoto" />
+        android:id="@+id/btMain" />
 </LinearLayout>
