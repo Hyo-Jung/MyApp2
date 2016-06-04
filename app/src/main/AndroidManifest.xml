@@ -26,14 +26,18 @@
         <activity
             android:name=".kaup.KaupActivity"
             android:label="@string/title_activity_kaup"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".calc.CalcActivity"
             android:label="@string/title_activity_calc"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".login.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".extra.WidgetActivity"
+            android:label="@string/title_activity_widget"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

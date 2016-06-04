@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.user.myapp2.R;
 import com.example.user.myapp2.calc.CalcActivity;
+import com.example.user.myapp2.extra.WidgetActivity;
 import com.example.user.myapp2.kaup.KaupActivity;
 import com.example.user.myapp2.login.LoginActivity;
 
@@ -39,6 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button)findViewById(R.id.btnSearch)).setOnClickListener(this);
         ((Button)findViewById(R.id.btmSms)).setOnClickListener(this);
         ((Button)findViewById(R.id.btnPhoto)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btmWidget)).setOnClickListener(this);
     }
 
     @Override
@@ -88,6 +90,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 intent.setDataAndType(uri, "image/j[peg");
                 startActivity(intent);
                 break;
+            case R.id.btmWidget :
+                startActivity(new Intent(this, WidgetActivity.class));
+                break;
+
         }
 
     }
