@@ -16,6 +16,7 @@ import com.example.user.myapp2.calc.CalcActivity;
 import com.example.user.myapp2.extra.WidgetActivity;
 import com.example.user.myapp2.kaup.KaupActivity;
 import com.example.user.myapp2.login.LoginActivity;
+import com.example.user.myapp2.signup.SignupActivity;
 
 import java.io.File;
 
@@ -41,6 +42,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button)findViewById(R.id.btmSms)).setOnClickListener(this);
         ((Button)findViewById(R.id.btnPhoto)).setOnClickListener(this);
         ((Button)findViewById(R.id.btmWidget)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btSignup)).setOnClickListener(this);
+
     }
 
     @Override
@@ -92,6 +95,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btmWidget :
                 startActivity(new Intent(this, WidgetActivity.class));
+                break;
+            case R.id.btSignup :
+                startActivity(new Intent(this, SignupActivity.class));
                 break;
 
         }

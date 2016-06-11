@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvTitle"/>
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ID :"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etId"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PW :"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPw"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="E-mail :"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="이름 :"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:textSize="30dp"
+        android:id="@+id/btSignup"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원 가입 결과는 하단에 표시됩니다."
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:textColor="#210699"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:id="@+id/tvResult"/>
+
+    </LinearLayout>

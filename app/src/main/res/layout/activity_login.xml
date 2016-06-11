@@ -29,48 +29,64 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <AutoCompleteTextView
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_email"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                    android:text="ID :"
+                    android:textSize="30dp"
+                    />
                 <EditText
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
-                    android:imeActionId="@+id/login"
-                    android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
-                    android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    android:id="@+id/etId"/>
+            </LinearLayout>
 
-            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="PW :"
+                    android:textSize="30dp"
+                    />
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPw"/>
+            </LinearLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/btSignin"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인 결과는 하단에 표시됩니다."
+                android:textAlignment="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:textColor="#210699"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:id="@+id/tvResult"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
