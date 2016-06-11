@@ -48,7 +48,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends Activity implements View.OnClickListener {
+public class Login2Activity extends Activity implements View.OnClickListener {
     EditText etId, etPw;
     TextView tvResult;
     //Button btSignin;
@@ -62,7 +62,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         etPw     = (EditText)this.findViewById(R.id.etPw);
         tvResult  = (TextView)this.findViewById(R.id.tvResult);
         ((Button)this.findViewById(R.id.btSignin)).setOnClickListener(this);
-
     }
 
     @Override
@@ -82,8 +81,16 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
         MemberDAO dao = new MemberDAO(this.getApplicationContext());
         memberOut = dao.login(memberIn);
+        Log.i("input ID" , memberIn.getId());
+        Log.i("memberOut" , memberOut.toString());
 
-        tvResult.setText("로그인 된 ID는 [" + memberOut.getId() + "] 입니다.");
+        if(memberOut == null) {
+            tvResult.setText("로그인 정보가 없습니다.");
+        } else {
+            //Log.i("output ID" , memberOut.getId());
+            tvResult.setText( memberOut.getName() + "님 로그인되었습니다.");
+        }
+
     }
 }
 

@@ -32,7 +32,7 @@
             android:label="@string/title_activity_calc"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".login.Login2Activity"
             android:label="@string/title_activity_login" />
         <activity
             android:name=".extra.WidgetActivity"

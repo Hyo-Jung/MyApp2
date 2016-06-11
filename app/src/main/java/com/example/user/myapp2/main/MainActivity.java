@@ -15,7 +15,7 @@ import com.example.user.myapp2.R;
 import com.example.user.myapp2.calc.CalcActivity;
 import com.example.user.myapp2.extra.WidgetActivity;
 import com.example.user.myapp2.kaup.KaupActivity;
-import com.example.user.myapp2.login.LoginActivity;
+import com.example.user.myapp2.login.Login2Activity;
 import com.example.user.myapp2.signup.SignupActivity;
 
 import java.io.File;
@@ -65,7 +65,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(new Intent(Intent.ACTION_DIAL, uri));
                 break;
             case R.id.btLogin :
-                startActivity(new Intent(this, LoginActivity.class));
+                startActivity(new Intent(this, Login2Activity.class));
                 break;
             case R.id.btnWeb :
                 uri = Uri.parse("http://www.naver.com");
