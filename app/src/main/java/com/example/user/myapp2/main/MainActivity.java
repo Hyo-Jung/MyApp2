@@ -42,10 +42,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button)findViewById(R.id.btnSearch)).setOnClickListener(this);
         ((Button)findViewById(R.id.btmSms)).setOnClickListener(this);
         ((Button)findViewById(R.id.btnPhoto)).setOnClickListener(this);
-        ((Button)findViewById(R.id.btmWidget)).setOnClickListener(this);
-        ((Button)findViewById(R.id.btSignup)).setOnClickListener(this);
+//        ((Button)findViewById(R.id.btnWidget)).setOnClickListener(this);
+//        ((Button)findViewById(R.id.btSignup)).setOnClickListener(this);
         ((Button)findViewById(R.id.btGroup)).setOnClickListener(this);
-        ((Button)findViewById(R.id.btList)).setOnClickListener(this);
+//        ((Button)findViewById(R.id.btList)).setOnClickListener(this);
 
     }
 
@@ -96,7 +96,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 intent.setDataAndType(uri, "image/j[peg");
                 startActivity(intent);
                 break;
-            case R.id.btmWidget :
+            case R.id.btnWidget :
                 startActivity(new Intent(this, WidgetActivity.class));
                 break;
             case R.id.btSignup :
@@ -106,7 +106,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 startActivity(new Intent(this, GroupActivity.class));
                 break;
             case R.id.btList:
-                //startActivity(new Intent(this, GroupActivity.class));
+                startActivity(new Intent(this, GroupActivity.class));
                 break;
 
         }
