@@ -13,6 +13,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="그룹관리"
+        android:textSize="20dp"
+        android:id="@+id/btGroup" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="카우프계산"
         android:textColor="#ff0000"
         android:textSize="20dp"

@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.user.myapp2.R;
 import com.example.user.myapp2.calc.CalcActivity;
 import com.example.user.myapp2.extra.WidgetActivity;
+import com.example.user.myapp2.group.GroupActivity;
 import com.example.user.myapp2.kaup.KaupActivity;
 import com.example.user.myapp2.login.Login2Activity;
 import com.example.user.myapp2.signup.SignupActivity;
@@ -43,6 +44,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button)findViewById(R.id.btnPhoto)).setOnClickListener(this);
         ((Button)findViewById(R.id.btmWidget)).setOnClickListener(this);
         ((Button)findViewById(R.id.btSignup)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btGroup)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btList)).setOnClickListener(this);
 
     }
 
@@ -98,6 +101,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btSignup :
                 startActivity(new Intent(this, SignupActivity.class));
+                break;
+            case R.id.btGroup :
+                startActivity(new Intent(this, GroupActivity.class));
+                break;
+            case R.id.btList:
+                //startActivity(new Intent(this, GroupActivity.class));
                 break;
 
         }
