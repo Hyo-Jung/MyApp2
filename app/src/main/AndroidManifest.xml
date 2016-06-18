@@ -41,7 +41,8 @@
         <activity
             android:name=".signup.SignupActivity"
             android:label="@string/title_activity_signup"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".group.GroupActivity"></activity>
     </application>
 
 </manifest>
